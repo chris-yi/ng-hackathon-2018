@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
+import axios from "axios";
 
 class App extends Component {
+  state = {mood: 2}
 
-  state = {mood: 0}
+
+  checkTheMood = async () => {
+    return await axios.post("https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment", {}, {headers: {"Ocp-Apim-Subscription-Key": "a51c5282a8e949a7b783e38ce7b020b0"}})
+  }
+
   sendText = async (e) => {
     console.log(" here is the message", this.refs.text.value ) 
     this.refs.text.value = "";
