@@ -1,0 +1,1 @@
+export const subscriptionKey = 'a51c5282a8e949a7b783e38ce7b020b0';
