@@ -85,3 +85,8 @@ button:focus {
   top: 5px;
   right: 100px;
 }
+
+.emoji {
+  width: 28px;
+  height: 28px;
+}
