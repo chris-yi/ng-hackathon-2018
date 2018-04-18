@@ -11,6 +11,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1>Sentimentaly</h1>
         <div className="text-display-container">
         </div>
         <div className="text-input-container">
