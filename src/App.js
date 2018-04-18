@@ -9,10 +9,9 @@ class App extends Component {
         <div className="text-display-container">
         </div>
         <div className="text-input-container">
-          <form>
             <input type="text" className="text-input" />
+            <div className="emoji-container"></div>
             <button>Submit</button>
-          </form>
         </div>
       </div>
     );
